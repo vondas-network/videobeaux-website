@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>videobeaux</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <a href="https://github.com/vondas-network/videobeaux" target="_blank">
+            <img src="https://github.com/vondas-network/videobeaux/raw/main/img/videobeaux-1.png?raw=true" alt="videobeaux" class="logo">
+        </a>
+        <p class="github-link">
+            <a href="https://github.com/vondas-network/videobeaux" target="_blank">View on GitHub</a>
+        </p>
+        <p class="tagline">The friendly multilateral video toolkit built for artists by artists.</p>
+        <div class="os-buttons">
+            <img src="https://www.google.com/s2/favicons?domain=apple.com&sz=64" alt="macOS" data-os="mac" title="macOS">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" data-os="linux" title="Linux">
+            <img src="https://www.google.com/s2/favicons?domain=windows.com&sz=64" alt="Windows" data-os="windows" title="Windows">
+        </div>
+
+        <section>
+            <h2>Project Dependencies</h2>
+
+
+            <pre id="install-instructions"><code>Select your OS to view installation steps.</code></pre>
+        </section>
+
+        <section>
+            <h2>Usage</h2>
+            <pre><code># ACTIVATE VIRTUAL ENVIRONMENT WITHIN PROJECT DIRECTORY
+source env/bin/activate
+
+# CHECK INSTALLATION 
+videobeaux --help</code></pre>
+        </section>
+
+        <section>
+            <h2>Examples</h2>
+            <h3>Program without arguments</h3>
+            <pre><code># USAGE
+videobeaux --program PROGRAM --input INPUT_FILE --output OUTPUT_FILE
+
+# PRACTICAL EXAMPLE
+videobeaux --program bad_predator --input example.mp4 --output example_bp.mp4</code></pre>
+            <video controls width="50%">
+    <source src="https://github.com/user-attachments/assets/fe45aa80-9878-4d15-bc64-87dd25071855" type="video/mp4">
+  </video>
+
+            <h3>Program with arguments</h3>
+            <pre><code># USAGE
+videobeaux --program PROGRAM --input INPUT_FILE --output OUTPUT_FILE --args ARGUMENTS
+
+# PRACTICAL EXAMPLE
+videobeaux --program stutter_pro -i example.mp4 -o stutter_example.mp4 --stutter 2</code></pre>
+            <video controls width="50%">
+    <source src="https://github.com/user-attachments/assets/fec22179-8e40-49e5-b591-c9d5fb07e31b" type="video/mp4">
+  </video>
+            <h3>Chaining programs</h3>
+            <pre><code># USAGE
+videobeaux --program PROGRAM --input INPUT_FILE --output OUTPUT_FILE --chain CHAIN
+
+# PRACTICAL EXAMPLE
+videobeaux --program chain_builder --input example.mp4 --output chainedoutput.mp4 --chain rb_blur,soapblind,lsd_feedback --force</code></pre>
+            <video controls width="50%">
+    <source src="https://github.com/user-attachments/assets/ac321c77-4757-4846-b838-6847472e7e09" type="video/mp4">
+  </video>
+        </section>
+
+        <!-- <footer>
+            <div class="footer-logos">
+                <a href="https://github.com/vondas-network" target="_blank">
+                    <img src="https://github.githubassets.com/favicons/favicon.png" alt="vondas-network" />
+                </a>
+                <a href="https://linktree.com/schwwaaa" target="_blank">
+                    <img src="https://www.google.com/s2/favicons?domain=vondas.network&sz=64" alt="schwwaaa" />
+                </a>
+            </div>
+        </footer> -->
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
