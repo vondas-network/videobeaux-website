@@ -47,7 +47,10 @@ videobeaux --help</code></pre>
 videobeaux --program PROGRAM --input INPUT_FILE --output OUTPUT_FILE
 
 # PRACTICAL EXAMPLE
-videobeaux --program bad_predator --input example.mp4 --output example_bp.mp4</code></pre>
+videobeaux \
+--program bad_predator \
+--input example.mp4 \
+--output example_bp.mp4</code></pre>
             <video controls width="50%">
     <source src="https://github.com/user-attachments/assets/fe45aa80-9878-4d15-bc64-87dd25071855" type="video/mp4">
   </video>
@@ -57,7 +60,12 @@ videobeaux --program bad_predator --input example.mp4 --output example_bp.mp4</c
 videobeaux --program PROGRAM --input INPUT_FILE --output OUTPUT_FILE --args ARGUMENTS
 
 # PRACTICAL EXAMPLE
-videobeaux --program stutter_pro --input example.mp4 --output stutter_example.mp4 --stutter 2</code></pre>
+videobeaux \
+--program stutter_pro \
+-i example.mp4 \
+-o stutter_example.mp4 \
+--stutter 2
+</code></pre>
             <video controls width="50%">
     <source src="https://github.com/user-attachments/assets/fec22179-8e40-49e5-b591-c9d5fb07e31b" type="video/mp4">
   </video>
@@ -66,7 +74,12 @@ videobeaux --program stutter_pro --input example.mp4 --output stutter_example.mp
 videobeaux --program PROGRAM --input INPUT_FILE --output OUTPUT_FILE --chain CHAIN
 
 # PRACTICAL EXAMPLE
-videobeaux --program chain_builder --input example.mp4 --output chainedoutput.mp4 --chain rb_blur,soapblind,lsd_feedback --force</code></pre>
+videobeaux \
+--program chain_builder \
+--input example.mp4 \
+--output chainedoutput.mp4 \
+--chain rb_blur,soapblind,lsd_feedback \
+--force</code></pre>
             <video controls width="50%">
     <source src="https://github.com/user-attachments/assets/ac321c77-4757-4846-b838-6847472e7e09" type="video/mp4">
   </video>
